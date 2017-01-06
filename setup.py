@@ -1,4 +1,5 @@
 import sys
+import os
 from setuptools import setup
 from setuptools.command.test import test as TestCommand
 
