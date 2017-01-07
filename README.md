@@ -21,7 +21,7 @@ python test/test_install.py
 
 ### Tensorflow
 
-Keras is installed with Theano as the backend. If you would like to install Tensorflor then [choose the correct binary to install from TF.](https://www.tensorflow.org/versions/r0.11/get_started/os_setup.html#pip-installation)
+Keras is installed with Theano as the backend. If you would like to install Tensorflow then [choose the correct binary to install from TF.](https://www.tensorflow.org/versions/r0.11/get_started/os_setup.html#pip-installation)
 
 ```shell
 # for example, TF for Python3, MacOS, CPU only
