@@ -25,6 +25,6 @@ class InstallTest():
 
 if __name__ == "__main__":
     test = InstallTest()
-    test.keras_import
-    test.simple_nn
+    test.keras_import()
+    test.simple_nn()
     print("If no assertion errors have been printed above, all tests passed and you are good to go!")
