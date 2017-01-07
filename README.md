@@ -45,8 +45,8 @@ If you run into installation or import errors, first try creating a virtual envi
 If you have the anaconda distribution (see [here](http://conda.pydata.org/docs/using/envs.html) for more info).
 
 ```shell
-conda create --name <your_environment_name>
-# for example conda create --name neural_network_tutorial
+conda create -n <your_environment_name> python=<yourPythonVersion>
+# for example conda create -n NN_tutorial python=3
 # When conda asks you proceed ([y]/n)? type 'y'
 # Switch into your new environment
 # Linux/OSX
