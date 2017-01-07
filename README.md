@@ -34,6 +34,51 @@ $ sudo pip3 install --upgrade $TF_BINARY_UR
 ```
 Then you will need to [change Keras' backend](https://keras.io/backend/) to Tensorflow
 
+### Troubleshooting
+
+Try creating a virtual environment, cloning the repo and running setup.py from inside this environment
+
+If you have the anaconda distribution. See [here](http://conda.pydata.org/docs/using/envs.html) for more info.
+
+```shell
+conda create --name <your_environment_name>
+# for example conda create --name neural_network_tutorial
+# When conda asks you proceed ([y]/n)? type 'y'
+# Switch into your new environment
+# Linux/OSX
+source activate <your_environment_name>
+# Windows
+activate <your_environment_name>
+# Then follow previous instructions
+git clone https://github.com/lgraesser/Neural-Networks-Workshop-Materials-WiMLDS.git
+cd Neural-Networks-Workshop-Materials-WiMLDS
+python setup.py install
+python test/test_install.py
+# To exit the environment
+# Linux/OSX
+source deactivate
+# Windows
+deactivate
+```
+
+Otherwise you can use virtual environment. See [here](http://docs.python-guide.org/en/latest/dev/virtualenvs/) for more info.
+
+```shell
+# Install if needed
+pip install virtualenv
+# Create a virtual environment
+cd <folder_name>
+virtualenv <your_environment_name>
+# Switch into your new environment
+source <your_environment_name>/bin/activate
+# Then follow previous instructions
+git clone https://github.com/lgraesser/Neural-Networks-Workshop-Materials-WiMLDS.git
+cd Neural-Networks-Workshop-Materials-WiMLDS
+python setup.py install
+python test/test_install.py
+# To exit the environment
+deactivate
+
 ## Usage
 
 There are two scripts which can be run through either the ipython notebook or the command line
