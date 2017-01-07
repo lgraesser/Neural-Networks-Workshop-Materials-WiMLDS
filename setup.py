@@ -2,6 +2,30 @@ import sys
 import os
 from setuptools import setup
 from setuptools.command.test import test as TestCommand
+from setuptools.command.install import install
+reqs = open('./requirements.txt', 'r').read().split('\n')
+
+
+class OverrideInstall(install):
+
+    """
+    Emulate sequential install of pip install -r requirements.txt
+    To fix numpy bug in scipy, scikit in py2
+    """
+
+    def run(self):
+        for req in reqs:
+            if req:
+                pip.main(["install", "-U", req])
+
+
+# explicitly config
+test_args = [
+    '--cov-report=term',
+    '--cov-report=html',
+    '--cov=rl',
+    'test'
+]
 
 
 class PyTest(TestCommand):
@@ -31,14 +55,11 @@ setup(
     url='https://github.com/lgraesser/Neural-Networks-Workshop-Materials-WiMLDS.git',
     author='laura',
     author_email='lhgraesser@gmail.com',
+    license='MIT',
     packages=[],
-    install_requires=['h5py',
-                      'numpy',
-                      'scipy',
-                      'matplotlib',
-                      'theano',
-                      'Keras'],
+    install_requires=[],
     dependency_links=[],
     tests_require=['pytest'],
-    cmdclass = {'test': PyTest},
+    test_suite='test',
+    cmdclass={'test': PyTest, 'install': OverrideInstall}
 )
