@@ -84,6 +84,8 @@ python test/test_install.py
 deactivate
 ```
 
+If Keras is working in Python but not IPython, this is because the sys.paths of the two are different. Lucy Park has the answer. Follow [her tutorial](https://www.lucypark.kr/blog/2013/02/10/when-python-imports-and-ipython-does-not/) (only a few steps) and this should fix it
+
 ## Usage
 
 There are two scripts which can be run through either the ipython notebook or the command line
