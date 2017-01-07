@@ -53,6 +53,6 @@ python Part1/KerasIntro_Example1.py
 
 ## Going further
 
-* Read Michael Nielson's excellent book [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/)
+* Read Michael Nielsen's excellent book [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/)
 * Implement your own neural network. [See my implementation in Python](https://github.com/lgraesser/NeuralNetwork) for an example.
 * Check out [my blog](https://learningmachinelearning.org/) for links to more resources on neural networks. I update it on a regular basis.
