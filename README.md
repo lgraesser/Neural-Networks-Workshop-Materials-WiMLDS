@@ -36,9 +36,9 @@ Then you will need to [change Keras' backend](https://keras.io/backend/) to Tens
 
 ### Troubleshooting
 
-Try creating a virtual environment, cloning the repo and running setup.py from inside this environment
+If you run into installation or import errors, first try creating a virtual environment, cloning the repo and running setup.py from inside this environment. 
 
-If you have the anaconda distribution. See [here](http://conda.pydata.org/docs/using/envs.html) for more info.
+If you have the anaconda distribution (see [here](http://conda.pydata.org/docs/using/envs.html) for more info).
 
 ```shell
 conda create --name <your_environment_name>
@@ -61,7 +61,7 @@ source deactivate
 deactivate
 ```
 
-Otherwise you can use virtual environment. See [here](http://docs.python-guide.org/en/latest/dev/virtualenvs/) for more info.
+Otherwise you can use virtual environment (see [here](http://docs.python-guide.org/en/latest/dev/virtualenvs/) for more info).
 
 ```shell
 # Install if needed
@@ -78,6 +78,7 @@ python setup.py install
 python test/test_install.py
 # To exit the environment
 deactivate
+```
 
 ## Usage
 
