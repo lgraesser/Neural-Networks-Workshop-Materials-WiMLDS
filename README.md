@@ -42,11 +42,11 @@ Then you will need to [change Keras' backend](https://keras.io/backend/) to Tens
 
 If you run into installation or import errors, first try creating a virtual environment, cloning the repo and running setup.py from inside this environment. 
 
-If you have the anaconda distribution (see [here](http://conda.pydata.org/docs/using/envs.html) for more info).
+If you have the anaconda distribution (see [here](http://conda.pydata.org/docs/using/envs.html) for more info). There is an issue with matplotlib and python 3.6, so please specify the python version to be <=3.5 to make the matplotlib install work.
 
 ```shell
 conda create -n <your_environment_name> python=<yourPythonVersion>
-# for example conda create -n NN_tutorial python=3
+# for example conda create -n NN_tutorial python=3.5
 # When conda asks you proceed ([y]/n)? type 'y'
 # Switch into your new environment
 # Linux/OSX
