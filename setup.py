@@ -1,3 +1,4 @@
+import pip
 import sys
 import os
 from setuptools import setup
