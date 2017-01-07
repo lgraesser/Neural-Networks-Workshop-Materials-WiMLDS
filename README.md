@@ -8,6 +8,10 @@ Materials for Neural Networks Workshop
 
 ### Basic
 
+* Create a directory to contain this repository
+* Navigate to that directory and run the commands below. This will install all the relevant libraries needed for the tutorial and to run the scripts contained in this repository. 
+	* The cleanest way to install all of the libraries is to create a virtual environment and install them within there. Details for how to do this are in the troubleshooting section. However this is not required.
+
 ```shell
 git clone https://github.com/lgraesser/Neural-Networks-Workshop-Materials-WiMLDS.git
 cd Neural-Networks-Workshop-Materials-WiMLDS
