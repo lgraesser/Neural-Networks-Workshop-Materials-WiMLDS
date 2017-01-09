@@ -45,6 +45,7 @@ def plotExamples(data, labels, label_dict):
         plt.imshow(im)
     plt.show()
 
+# NOTE: you will need to close the images when they pop up for the script to progress
 plotExamples(train_data, train_labels, label_dict)
 plotExamples(test_data, test_labels, label_dict)
 
