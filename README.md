@@ -93,7 +93,6 @@ There are three scripts which can be run through either the ipython notebook or 
 * Part1/KerasIntro_OtherExamples.py/ipynb
 * Part2/IntrotoNeuralNets2_CIFAR_2classes.ipynb
 
-Scripts can be run using an ipython notebook or the command line
 ```shell
 # To load ipython notebook
 ipython notebook
