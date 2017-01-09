@@ -103,5 +103,6 @@ python Part1/KerasIntro_Example1.py
 ## Going further
 
 * Read Michael Nielsen's excellent book [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/)
+* Watch over 20 hours of videos of deep learning tutorials thanks to the fantastic [Bay Area Deep Learning School](https://www.youtube.com/watch?v=eyovmAtoUx0). Day 2 is [here](https://www.youtube.com/watch?v=9dXiAecyJrY) and the schedule is [here](http://www.bayareadlschool.org/)
 * Implement your own neural network. [See my implementation in Python](https://github.com/lgraesser/NeuralNetwork) for an example.
 * Check out [my blog](https://learningmachinelearning.org/) for links to more resources on neural networks. I update it on a regular basis.
