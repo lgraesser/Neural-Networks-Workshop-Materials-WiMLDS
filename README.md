@@ -88,11 +88,9 @@ If Keras is working in Python but not IPython, this is because the sys.paths of 
 
 ## Usage
 
-There are two scripts which can be run through either the ipython notebook or the command line
+There are three scripts which can be run through either the ipython notebook or the command line
 * Part1/KerasIntro_Example1.py/ipynb
 * Part1/KerasIntro_OtherExamples.py/ipynb
-
-The last script is only available with the ipython notebook
 * Part2/IntrotoNeuralNets2_CIFAR_2classes.ipynb
 
 Scripts can be run using an ipython notebook or the command line
