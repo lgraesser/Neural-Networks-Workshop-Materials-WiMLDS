@@ -188,6 +188,8 @@ print()
 Convolutional Networks
 '''
 
+train_data_short = train_data[:5000]
+
 '''
 Starting with a simple model
 - How reliably does it learn?
