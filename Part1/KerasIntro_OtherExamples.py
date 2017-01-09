@@ -12,14 +12,15 @@ train_x_short = train_x[:20000]
 train_y_short = train_y[:20000]
 
 print("Categorical crossentropy vs. quadratic cost")
-### Quadratic cost (mean squared error) vs. categorical crossentropy
-# - Categorical cross-entropy significantly speeds up training
-# - Softmax output layers are the most appropriate for the MNIST problem since each image can only 
-#   belong to one class and softmax outputs a proability distribution across the 10 classes.
-#     - As the value of one output node increases, the value of one or more other output nodes must decrease
-#     - This is consistent with our intuition that as we become more confident and image belongs to one class, 
-#       we reduce our confidence that an image belongs to other classes
-
+'''
+Quadratic cost (mean squared error) vs. categorical crossentropy
+- Categorical cross-entropy significantly speeds up training
+- Softmax output layers are the most appropriate for the MNIST problem since each image can only 
+  belong to one class and softmax outputs a proability distribution across the 10 classes.
+    - As the value of one output node increases, the value of one or more other output nodes must decrease
+    - This is consistent with our intuition that as we become more confident and image belongs to one class, 
+      we reduce our confidence that an image belongs to other classes
+'''
 # Softmax output layer, mse
 print("Quadratic cost (slow, poorer learning)")
 model = Sequential()
@@ -47,10 +48,11 @@ model.fit(train_x_short, train_y_short, batch_size=128, nb_epoch=10, validation_
 print()
 
 print("Testing batch sizes")
-# Reducing the batch_size tends to increase the amount learnt per epoch, but also increases time to complete an epoch
-# - In the experiments below total time to reach a comparable accuracy level was broadly similar
-# - Reducing batch size from 32 to 16 appeared to hurt performance
-
+'''
+Reducing the batch_size tends to increase the amount learnt per epoch, but also increases time to complete an epoch
+- In the experiments below total time to reach a comparable accuracy level did decrease as batch size decreased
+- However, reducing batch size from 32 to 16 appeared to hurt performance
+'''
 print("Batch size = 128")
 start = time.time()
 model = Sequential()
@@ -112,10 +114,11 @@ print("Model took  {} seconds to complete".format(end - start))
 print()
 
 print("Testing Relu")
-# Relu + softmax
-# - Needs a low learning rate for the network to learn anything
-# - Performs worse than a sigmoid hidden layer for shallow networks
-
+'''
+Relu + softmax
+- Needs a low learning rate for the network to learn anything
+- Performs worse than a sigmoid hidden layer for shallow networks
+'''
 print("Relu hidden layer, 3 layer network")
 model = Sequential()
 model.add(Dense(128, input_dim=784))
@@ -140,12 +143,14 @@ model2.compile(optimizer=sgd, loss='categorical_crossentropy', metrics=['accurac
 model2.fit(train_x_short, train_y_short, batch_size=32, nb_epoch=10, validation_split=0.2, verbose=2)
 print()
 
-# Relu really comes into its own for deep networks
-# - Deeper network tend to perform better than shallow networks for complex tasks
-# - But they are hard to train. Relu's make it easier for deep networks to learn because their 
-#   gradients don't saturate for postive inputs
+'''
+Relu really comes into its own for deep networks
+- Deeper network tend to perform better than shallow networks for complex tasks
+- But they are hard to train. Relu's make it easier for deep networks to learn because their 
+  gradients don't saturate for postive inputs
+'''
 
-print("Relu hidden layers, 5 layer network")
+print("Relu hidden layers, 6 layer network")
 model3 = Sequential()
 model3.add(Dense(512, input_dim=784))
 model3.add(Activation('relu'))
@@ -163,7 +168,7 @@ model3.compile(optimizer=sgd, loss='categorical_crossentropy', metrics=['accurac
 model3.fit(train_x_short, train_y_short, batch_size=32, nb_epoch=10, validation_split=0.2, verbose=2)
 
 
-print("Sigmoid hidden layers, 3 layer network")
+print("Sigmoid hidden layers, 6 layer network")
 model3 = Sequential()
 model3.add(Dense(512, input_dim=784))
 model3.add(Activation('sigmoid'))
