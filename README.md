@@ -33,13 +33,7 @@ cd ~/.keras/
 ls
 ```
 
-If there is a file named keras.json then open it by typing 
-
-```
-open keras.json
-``` 
-
-The default configuration looks like this.
+If there is a file named keras.json then open it by typing  ```open keras.json```  The default configuration looks like this.
 
 ```
 {
@@ -71,7 +65,7 @@ Then copy the information below into the file and save it
 }
 ```
 
-* Navigate back to the github directory (type ls at any point to list the files in the directory you are in) and check that the installation tests works by running ```python test/test_install.py```
+Navigate back to the github directory (type ls at any point to list the files in the directory you are in) and check that the installation tests works by running ```python test/test_install.py```
 * The first line printed to the screen when you run it should be "Using Theano backend"
 
 #### Keras can be imported in Python but not IPython
