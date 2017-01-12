@@ -6,7 +6,7 @@ Materials for Neural Networks Workshop
 
 ## Installation Instructions
 
-The instructions below will help you set up a virtual environment, get all of the scripts and data, and install all of the required libraries required for this tutorial. There are two sets of instructions. If you have the Anaconda distribution of Python then follow the instructions "1. Using Anaconda". Otherwise follow the instructions "2. Using virtualenv."
+The instructions below will help you set up a virtual environment, get all of the scripts and data, and install all of the libraries required for this tutorial. There are two sets of instructions. If you have the Anaconda distribution of Python then follow the instructions "1. Using Anaconda". Otherwise follow the instructions "2. Using virtualenv."
 
 What is a virtual environment and why use one?
 
@@ -23,11 +23,13 @@ If you have the anaconda distribution of Python (see [here](http://conda.pydata.
 ```shell
 # In the terminal create a directory that you want to contain this repo and navigate to it
 mkdir <directory_name>
+# eg. mkdir NN_tutorial
 cd <directory_name>
 # Then, create a virtual environment
 conda create -n <your_environment_name> python=<yourPythonVersion>
 # for example conda create -n NN_tutorial python=3.5
 # When conda asks you proceed ([y]/n)? type 'y'
+
 # Switch into your new environment
     # Linux/OSX
     source activate <your_environment_name>
@@ -40,7 +42,8 @@ cd Neural-Networks-Workshop-Materials-WiMLDS
 python setup.py install
 python test/test_install.py
 
-# Now you are finished. When you need to exit the environment (at the end of the tutorial for example), type.
+# Now you are finished. 
+#When you need to exit the environment (at the end of the tutorial for example), type.
     # Linux/OSX
     source deactivate
     # Windows
@@ -53,10 +56,11 @@ If you get an error message when running ```python test/test_install.py``` that 
 To use virtualenv (see [here](http://docs.python-guide.org/en/latest/dev/virtualenvs/) for more info) follow the instructions below.
 
 ```shell
-# Install virtualenv
+# In the terminal, install virtualenv
 pip install virtualenv
-# In the terminal create a directory that you want to contain the repo and navigate to it
+# Create a directory that you want to contain the repo and navigate to it
 mkdir <directory_name>
+# eg. mkdir NN_tutorial
 cd <directory_name>
 # Then, create a virtual environment
 virtualenv <your_environment_name>
@@ -69,7 +73,8 @@ cd Neural-Networks-Workshop-Materials-WiMLDS
 python setup.py install
 python test/test_install.py
 
-# Now you are finished. When you need to exit the environment (at the end of the tutorial for example), type.
+# Now you are finished. 
+#When you need to exit the environment (at the end of the tutorial for example), type.
 deactivate
 ```
 
@@ -77,7 +82,7 @@ If you get an error message when running ```python test/test_install.py``` that 
 
 ### Installing Tensorflow
 
-Keras is installed with Theano as the backend. This is all that is required for the tutorial. However, if you would like to install Tensorflow then [choose the correct binary to install from TF.](https://www.tensorflow.org/versions/r0.11/get_started/os_setup.html#pip-installation)
+Keras is installed with Theano as the backend. This is all that is required for the tutorial. However, if you would like to install Tensorflow then [choose the correct binary to install from Tensorflow.](https://www.tensorflow.org/versions/r0.11/get_started/os_setup.html#pip-installation)
 
 ```shell
 # for example, TF for Python3, MacOS, CPU only
@@ -86,11 +91,12 @@ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/mac/cpu/tensorflo
 export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.11.0rc1-py2-none-any.whl
 # or Linux CPU-only, Python3.5
 export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.11.0rc1-cp35-cp35m-linux_x86_64.whl
+
 # Then install Tensorflow
-# Python 2
-$ sudo pip install --upgrade $TF_BINARY_URL
-# Python 3
-$ sudo pip3 install --upgrade $TF_BINARY_UR
+    # Python 2
+    $ sudo pip install --upgrade $TF_BINARY_URL
+    # Python 3
+    $ sudo pip3 install --upgrade $TF_BINARY_UR
 ```
 Then you may need to change Keras' backend to Tensorflow. Check the current backend by typing into the terminal.
 
@@ -105,8 +111,9 @@ Either "Using Theano backend" or "Using tensorflow backend" will be printed to t
 
 If you get an error message when running ```python test/test_install.py``` that ends with "Import Error: No module named tensorflow" this means that your version of Keras is using Tensorflow instead of Theano as the backend.
 
-To change the backend to Theano you need to change the settings in the Keras config file
-First check if you have one by navigating the the following directory then typing ```ls``` to list the files contained in that directory. The commands are below.
+To change the backend to Theano you need to change the settings in the Keras config file.
+
+First check if you have one by navigating to the directory listed below then typing ```ls``` to list the files contained in that directory. The commands are below.
 
 ```shell
 cd ~/.keras/
@@ -160,6 +167,7 @@ Try installing with no virtual environments by following the instructions below
 ```shell
 # In the terminal create a directory that you want to contain the repo and navigate to it
 mkdir <directory_name>
+# eg. mkdir NN_tutorial
 cd <directory_name>
 
 # Clone the repo, install the relevant libraries using setup.py and test the install worked
@@ -180,9 +188,10 @@ There are three scripts which acommpany this tutorial. They can be run through e
     * IntrotoNeuralNets2_CIFAR_2classes
 
 ```shell
-# To load an ipython notebook
+# To load an ipython notebook, type
 ipython notebook
-# Otherwise to run a .py script from command line navigate to the directory it is in and type python <filename>, for example
+# Otherwise to run a .py script from command line 
+# navigate to the directory it is in and type python <filename>, for example
 cd Part1
 python KerasIntro_Example1.py
 ```
