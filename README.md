@@ -1,4 +1,4 @@
-# Neural Networks Workshop Materials WiMLDS
+# Neural Networks Workshop
 
 Materials for Neural Networks Workshop
 * January 21 2017
@@ -90,7 +90,12 @@ $ sudo pip install --upgrade $TF_BINARY_URL
 # Python 3
 $ sudo pip3 install --upgrade $TF_BINARY_UR
 ```
-Then you will need to [change Keras' backend](https://keras.io/backend/) to Tensorflow.
+Then you may need to change Keras' backend to Tensorflow. Check the current backend by typing into the terminal.
+
+```
+python -c "from keras import backend"
+```
+Either "Using Theano backend" or "Using tensorflow backend" will be printed to the screen. If the backend needs changing, follow the instructions above or see [Keras' documentation](https://keras.io/backend/).
 
 ### Installation with Virtual Environments
 
