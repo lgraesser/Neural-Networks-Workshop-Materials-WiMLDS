@@ -44,7 +44,7 @@ If there is a file named keras.json then open it by typing  ```open keras.json``
 }
 ```
 
-Change the value of "backend" to "theano" and of "image_dim_ordering" to "th"
+Change the value of "backend" to "theano" and "image_dim_ordering" to "th"
 
     
 Alternatively, if there is no keras.json file then create one and open it by typing
@@ -94,12 +94,17 @@ Then you will need to [change Keras' backend](https://keras.io/backend/) to Tens
 ### Installation with Virtual Environments
 
 Why use a virtual environment?
-    *A virtual environment is a named, isolated, working copy of Python that that maintains its own files, directories, and paths so that you can work with specific versions of libraries or Python itself without affecting other Python projects. Virtual environmets make it easy to cleanly separate different projects and avoid problems with different dependencies and version requiremetns across components.**
-            https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/
 
-If you run into other installation or import errors, try creating a virtual environment, cloning the repo and running setup.py from inside this environment.
+*A virtual environment is a named, isolated, working copy of Python that that maintains its own files, directories, and paths so that you can work with specific versions of libraries or Python itself without affecting other Python projects. Virtual environmets make it easy to cleanly separate different projects and avoid problems with different dependencies and version requiremetns across components.* [Source](https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/)
 
-If you have the anaconda distribution (see [here](http://conda.pydata.org/docs/using/envs.html) for more info), then follow the instructions below. Note, there is an issue with matplotlib and python 3.6, so please specify the python version to be <=3.5 to make the matplotlib install work.
+Additionally, if you run into other installation or import errors, then it can help to setting everything up from within a virtual environment.
+
+There are two ways to create virtual environments in Python
+1. Using the Anaconda distribution of Python.
+2. Using virtualenv.
+  
+#### 1. Using Anaconda
+If you have the anaconda distribution of Python (see [here](http://conda.pydata.org/docs/using/envs.html) for more info), then follow the instructions below. Note, there is an issue with matplotlib and python 3.6, so please specify the python version to be <=3.5 to make the matplotlib install work.
 
 ```shell
 # Navigate to the folder that you want to contrain the repo, then create a virtual environment
@@ -125,7 +130,8 @@ python test/test_install.py
     deactivate
 ```
 
-Otherwise you can use virtual environment (see [here](http://docs.python-guide.org/en/latest/dev/virtualenvs/) for more info) by following the instructions below.
+#### 2. Using virtualenv
+To use virtualenv (see [here](http://docs.python-guide.org/en/latest/dev/virtualenvs/) for more info) follow the instructions below.
 
 ```shell
 # Install virtualenv if needed
@@ -146,9 +152,9 @@ python test/test_install.py
 deactivate
 ```
 
-## Usage
+## How to use this repo
 
-There are three scripts which can be run through either the ipython notebook or the command line
+There are three scripts which acommpany this tutorial and which can be run through either the ipython notebook or the command line
 * Part1/KerasIntro_Example1.py/ipynb
 * Part1/KerasIntro_OtherExamples.py/ipynb
 * Part2/IntrotoNeuralNets2_CIFAR_2classes.ipynb
