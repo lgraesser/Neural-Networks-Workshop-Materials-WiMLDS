@@ -43,7 +43,7 @@ python setup.py install
 python test/test_install.py
 
 # Now you are finished. 
-#When you need to exit the environment (at the end of the tutorial for example), type.
+# When you need to exit the environment (at the end of the tutorial for example), type.
     # Linux/OSX
     source deactivate
     # Windows
@@ -74,7 +74,7 @@ python setup.py install
 python test/test_install.py
 
 # Now you are finished. 
-#When you need to exit the environment (at the end of the tutorial for example), type.
+# When you need to exit the environment (at the end of the tutorial for example), type.
 deactivate
 ```
 
