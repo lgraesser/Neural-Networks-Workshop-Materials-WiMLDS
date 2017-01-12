@@ -10,7 +10,7 @@ class InstallTest():
         import matplotlib
         assert('matplotlib' in sys.modules)
         import matplotlib.pyplot as plt
-        assert('plt' in sys.modules)
+        assert('matplotlib.pyplot' in sys.modules)
 
     def numpy_import(self):
         import sys
