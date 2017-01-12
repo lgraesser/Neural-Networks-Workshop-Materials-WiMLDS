@@ -188,7 +188,7 @@ There are three scripts which acommpany this tutorial. They can be run through e
     * IntrotoNeuralNets2_CIFAR_2classes
 
 ```shell
-# In the terminal, to make sure you are have the most up to date version of the repo , type
+# In the terminal, to make sure you have the most up to date version of the repo , type
 git pull origin master
 
 #To load an ipython notebook, type
