@@ -66,7 +66,8 @@ Then copy the information below into the file and save it
 ```
 
 Navigate back to the github directory (type ls at any point to list the files in the directory you are in) and check that the installation tests works by running ```python test/test_install.py```
-* The first line printed to the screen when you run it should be "Using Theano backend"
+
+The first line printed to the screen when you run it should be "Using Theano backend"
 
 #### Keras can be imported in Python but not IPython
 
@@ -99,7 +100,7 @@ What is a virtual environment and why use one?
 
 If you run into installation or import errors, then it can help to set everything up from within a virtual environment as you can be sure that the version of each of the dependencies matches the requirements.
 
-There are two ways to create virtual environments in Python
+There are two ways to create virtual environments in Python.
 
 1. Using the Anaconda distribution of Python.
 2. Using virtualenv.
