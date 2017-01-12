@@ -1,5 +1,4 @@
 h5py>=2.6.0
-ipython
 numpy>=1.11.1
 scipy>=0.18.0
 matplotlib=1.4.3
