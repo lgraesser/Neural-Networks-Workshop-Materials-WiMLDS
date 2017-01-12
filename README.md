@@ -137,6 +137,8 @@ python test/test_install.py
     deactivate
 ```
 
+If you get an error message when running ```python test/test_install.py``` that ends with "Import Error: No module named tensorflow" this means that your version of Keras is using Tensorflow instead of Theano as the backend. To change the backend follow the instructions in the "Troubleshooting - Import Error: no module named tensorflow" section of this document,
+
 #### 2. Using virtualenv
 To use virtualenv (see [here](http://docs.python-guide.org/en/latest/dev/virtualenvs/) for more info) follow the instructions below.
 
@@ -158,6 +160,8 @@ python test/test_install.py
 # When you need to exit the environment (at the end of the tutorial for example)
 deactivate
 ```
+
+If you get an error message when running ```python test/test_install.py``` that ends with "Import Error: No module named tensorflow" this means that your version of Keras is using Tensorflow instead of Theano as the backend. To change the backend follow the instructions in the "Troubleshooting - Import Error: no module named tensorflow" section of this document,
 
 ## How to use this repo
 
