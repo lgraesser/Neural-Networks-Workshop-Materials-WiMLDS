@@ -23,22 +23,23 @@ python test/test_install.py
 
 #### Import Error: No module names tensorflow
 
-* If you get an error message when running ```python test/test_install.py``` that ends with "Import Error: No module named tensorflow" this means that your version of Keras is using Tensorflow instead of Theano as the backend.
-* To change the backend to Theano you need to change the settings in the Keras config file
-* First check if you have one by navigating the the following directory then typing ls to list the files contained in that directory
+If you get an error message when running ```python test/test_install.py``` that ends with "Import Error: No module named tensorflow" this means that your version of Keras is using Tensorflow instead of Theano as the backend.
+
+To change the backend to Theano you need to change the settings in the Keras config file
+First check if you have one by navigating the the following directory then typing ls to list the files contained in that directory
 
 ```shell
 cd ~/.keras/
 ls
 ```
 
-* If there is a file named keras.json then open it by typing 
+If there is a file named keras.json then open it by typing 
 
 ```
 open keras.json
 ``` 
 
-* The default configuration looks like this.
+The default configuration looks like this.
 
 ```
 {
@@ -49,17 +50,17 @@ open keras.json
 }
 ```
 
-* Change the value of "backend" to "theano" and of "image_dim_ordering" to "th"
+Change the value of "backend" to "theano" and of "image_dim_ordering" to "th"
 
     
-* Alternatively, if there is no keras.json file then create one and open it by typing
+Alternatively, if there is no keras.json file then create one and open it by typing
 
 ```
 touch keras.json
 open keras.json
 ```
 
-* Then copy the information below into the file and save it
+Then copy the information below into the file and save it
 
 ```
 {
@@ -68,7 +69,7 @@ open keras.json
     "floatx": "float32",
     "backend": "theano"
 }
-    ```
+```
 
 * Navigate back to the github directory (type ls at any point to list the files in the directory you are in) and check that the installation tests works by running ```python test/test_install.py```
 * The first line printed to the screen when you run it should be "Using Theano backend"
