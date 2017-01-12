@@ -93,7 +93,7 @@ Then you will need to [change Keras' backend](https://keras.io/backend/) to Tens
 
 ### Installation with Virtual Environments
 
-Why use a virtual environment?
+What is a virtual environment and why use one?
 
 *A virtual environment is a named, isolated, working copy of Python that that maintains its own files, directories, and paths so that you can work with specific versions of libraries or Python itself without affecting other Python projects. Virtual environmets make it easy to cleanly separate different projects and avoid problems with different dependencies and version requiremetns across components.* [Source](https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/)
 
@@ -154,7 +154,7 @@ deactivate
 
 ## How to use this repo
 
-There are three scripts which acommpany this tutorial and which can be run through either the ipython notebook or the command line
+There are three scripts which acommpany this tutorial. They can be run through either the ipython notebook or the command line
 * Part1/KerasIntro_Example1.py/ipynb
 * Part1/KerasIntro_OtherExamples.py/ipynb
 * Part2/IntrotoNeuralNets2_CIFAR_2classes.ipynb
