@@ -100,8 +100,9 @@ What is a virtual environment and why use one?
 If you run into installation or import errors, then it can help to set everything up from within a virtual environment as you can be sure that the version of each of the dependencies matches the requirements.
 
 There are two ways to create virtual environments in Python
-1.  Using the Anaconda distribution of Python.
-2.  Using virtualenv.
+
+1. Using the Anaconda distribution of Python.
+2. Using virtualenv.
   
 #### 1. Using Anaconda
 If you have the anaconda distribution of Python (see [here](http://conda.pydata.org/docs/using/envs.html) for more info), then follow the instructions below. Note, there is an issue with matplotlib and python 3.6, so please specify the python version to be <=3.5 to make the matplotlib install work.
