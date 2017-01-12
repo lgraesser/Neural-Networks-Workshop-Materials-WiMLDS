@@ -73,6 +73,10 @@ The first line printed to the screen when you run it should be "Using Theano bac
 
 If Keras is working in Python but not IPython, this is because the sys.paths of the two are different. Lucy Park has the answer. Follow [her tutorial](https://www.lucypark.kr/blog/2013/02/10/when-python-imports-and-ipython-does-not/) (only a few steps) and this should fix it
 
+### Still having issues?
+
+Try installation with a virtual environment (see below)
+
 ### Installing Tensorflow
 
 Keras is installed with Theano as the backend. This is all that is required for the tutorial. However, if you would like to install Tensorflow then [choose the correct binary to install from TF.](https://www.tensorflow.org/versions/r0.11/get_started/os_setup.html#pip-installation)
