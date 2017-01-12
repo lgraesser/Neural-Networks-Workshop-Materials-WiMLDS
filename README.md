@@ -32,36 +32,42 @@ cd ~/.keras/
 ls
 ```
 
-    - If there is a file named keras.json then open it by typing ```open keras.json```
-    - The default configuration looks like this
+* If there is a file named keras.json then open it by typing 
 
-    ```
-    {
-        "image_dim_ordering": "tf",
-        "epsilon": 1e-07,
-        "floatx": "float32",
-        "backend": "tensorflow"
-    }
-    ```
+```
+open keras.json
+``` 
 
-    - Change the value of "backend" to "theano" and of "image_dim_ordering" to "th"
+* The default configuration looks like this.
 
-    * If there is no keras.json file then create one and open it by typing
+```
+{
+    "image_dim_ordering": "tf",
+    "epsilon": 1e-07,
+    "floatx": "float32",
+    "backend": "tensorflow"
+}
+```
 
-    ```
-    touch keras.json
-    open keras.json
-    ```
+* Change the value of "backend" to "theano" and of "image_dim_ordering" to "th"
 
-    * Then copy the information below into the file and save it
+    
+* Alternatively, if there is no keras.json file then create one and open it by typing
 
-    ```
-    {
-        "image_dim_ordering": "th",
-        "epsilon": 1e-07,
-        "floatx": "float32",
-        "backend": "theano"
-    }
+```
+touch keras.json
+open keras.json
+```
+
+* Then copy the information below into the file and save it
+
+```
+{
+    "image_dim_ordering": "th",
+    "epsilon": 1e-07,
+    "floatx": "float32",
+    "backend": "theano"
+}
     ```
 
 * Navigate back to the github directory (type ls at any point to list the files in the directory you are in) and check that the installation tests works by running ```python test/test_install.py```
