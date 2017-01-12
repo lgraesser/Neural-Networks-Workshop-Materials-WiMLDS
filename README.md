@@ -188,8 +188,14 @@ There are three scripts which acommpany this tutorial. They can be run through e
     * IntrotoNeuralNets2_CIFAR_2classes
 
 ```shell
-# To load an ipython notebook, type
+# In the terminal, to load an ipython notebook, type
 ipython notebook
+
+# If you get an error, you may need to install ipython first. Try 
+pip install ipython
+# Then
+ipython notebook
+
 # Otherwise to run a .py script from command line 
 # navigate to the directory it is in and type python <filename>, for example
 cd Part1
