@@ -9,7 +9,7 @@ Materials for Neural Networks Workshop
 ### Minimum requirements to get started
 
 * Create a directory to contain this repository
-* Navigate to that directory and run the commands below. This will install all the relevant libraries needed for the tutorial and to run the scripts contained in this repository.  
+* Navigate to that directory and run the commands below. This will install all the relevant libraries needed for the tutorial.
     * Please note: The cleanest way to install all of the libraries is to create a virtual environment and install them within there. Details for how to do this are in the Installation with Virtual Environments section below. However this is not required.
 
 ```shell
@@ -30,7 +30,7 @@ python test/test_install.py
 ```shell
 cd ~/.keras/
 ls
-    ```
+```
 
     - If there is a file named keras.json then open it by typing ```open keras.json```
     - The default configuration looks like this
