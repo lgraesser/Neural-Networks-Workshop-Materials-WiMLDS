@@ -97,7 +97,7 @@ What is a virtual environment and why use one?
 
 *A virtual environment is a named, isolated, working copy of Python that that maintains its own files, directories, and paths so that you can work with specific versions of libraries or Python itself without affecting other Python projects. Virtual environmets make it easy to cleanly separate different projects and avoid problems with different dependencies and version requiremetns across components.* [Source](https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/)
 
-Additionally, if you run into other installation or import errors, then it can help to setting everything up from within a virtual environment.
+If you run into installation or import errors, then it can help to set everything up from within a virtual environment as you can be sure that the version of each of the dependencies matches the requirements.
 
 There are two ways to create virtual environments in Python
 1. Using the Anaconda distribution of Python.
