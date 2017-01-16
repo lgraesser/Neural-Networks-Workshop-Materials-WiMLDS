@@ -215,7 +215,7 @@ There are three scripts which acommpany this tutorial. They can be run through e
 # In the terminal, to make sure you have the most up to date version of the repo , type
 git pull origin master
 
-#To load an ipython notebook, type
+#To load a jupyter notebook, type
 jupyter notebook
 
 # If you get an error, you may need to install ipython first. Try 
