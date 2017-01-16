@@ -6,8 +6,6 @@ Materials for Neural Networks Workshop
 
 ## Installation Instructions
 
-*Thank you to Nidhin Pattaniyil for his detailed feedback on the setup*
-
 The instructions below will help you set up a virtual environment, get all of the scripts and data, and install all of the libraries required for this tutorial. There are two sets of instructions. If you have the Anaconda distribution of Python then follow the instructions "1. Using Anaconda". Otherwise follow the instructions "2. Using virtualenv."
 
 What is a virtual environment and why use one?
@@ -237,3 +235,7 @@ python KerasIntro_Example1.py
 * Watch over 20 hours of videos of deep learning tutorials thanks to the fantastic [Bay Area Deep Learning School](https://www.youtube.com/watch?v=eyovmAtoUx0). Day 2 is [here](https://www.youtube.com/watch?v=9dXiAecyJrY) and the schedule is [here](http://www.bayareadlschool.org/)
 * Implement your own neural network. [See my implementation in Python](https://github.com/lgraesser/NeuralNetwork) for an example.
 * Check out [my blog](https://learningmachinelearning.org/) for links to more resources on neural networks. I update it on a regular basis.
+
+## Acknowledgements
+
+Thank you to Nidhin Pattaniyil for his detailed feedback on the setup and installation instructions.
