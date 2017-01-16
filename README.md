@@ -6,6 +6,8 @@ Materials for Neural Networks Workshop
 
 ## Installation Instructions
 
+*Thank you to Nidhin Pattaniyil for his detailed feedback on the setup*
+
 The instructions below will help you set up a virtual environment, get all of the scripts and data, and install all of the libraries required for this tutorial. There are two sets of instructions. If you have the Anaconda distribution of Python then follow the instructions "1. Using Anaconda". Otherwise follow the instructions "2. Using virtualenv."
 
 What is a virtual environment and why use one?
