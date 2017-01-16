@@ -18,6 +18,8 @@ from keras.layers.pooling import MaxPooling2D
 from keras.optimizers import SGD
 from keras.constraints import maxnorm
 from keras.regularizers import l2, l1
+from keras import backend as K
+K.set_image_dim_ordering("th")
 
 # Load data
 train_data = pickle.load(open("CIFAR_2_train_data.pkl", 'rb'))
