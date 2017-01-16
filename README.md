@@ -20,6 +20,8 @@ There are two ways to create virtual environments in Python.
 #### 1. Using Anaconda
 If you have the anaconda distribution of Python (see [here](http://conda.pydata.org/docs/using/envs.html) for more info), then follow the instructions below. Note, there is an issue with matplotlib and python 3.6, so please specify the python version to be <=3.5 to make the matplotlib install work.
 
+**Linux/Mac**
+
 ```shell
 # In the terminal create a directory that you want to contain this repo and navigate to it
 mkdir <directory_name>
@@ -31,10 +33,7 @@ conda create -n <your_environment_name> python=<yourPythonVersion>
 # When conda asks you proceed ([y]/n)? type 'y'
 
 # Switch into your new environment
-    # Linux/OSX
-    source activate <your_environment_name>
-    # Windows
-    activate <your_environment_name>
+source activate <your_environment_name>
 
 # Clone the repo, install the relevant libraries using setup.py and test the install worked
 git clone https://github.com/lgraesser/Neural-Networks-Workshop-Materials-WiMLDS.git
@@ -44,12 +43,36 @@ python test/test_install.py
 
 # Now you are finished. 
 # When you need to exit the environment (at the end of the tutorial for example), type.
-    # Linux/OSX
-    source deactivate
-    # Windows
-    deactivate
+source deactivate
 ```
+If you get an error message when running ```python test/test_install.py``` that ends with "Import Error: No module named tensorflow" this means that your version of Keras is using Tensorflow instead of Theano as the backend. To change the backend follow the instructions in the "Troubleshooting - Import Error: no module named tensorflow" section of this document.
 
+**Windows**
+
+```shell
+# In the terminal create a directory that you want to contain this repo and navigate to it
+mkdir <directory_name>
+# eg. mkdir NN_tutorial
+cd <directory_name>
+
+# Clone the repo
+git clone https://github.com/lgraesser/Neural-Networks-Workshop-Materials-WiMLDS.git
+
+# Then, create a virtual environment
+conda env create -f environment.yml
+# Note: the environment will be named NN_tutorial and will be set up with python 3.5
+# When conda asks you proceed ([y]/n)? type 'y'
+
+# Switch into your new environment
+activate NN_tutorial
+
+# Test the install worked
+python test/test_install.py
+
+# Now you are finished. 
+# When you need to exit the environment (at the end of the tutorial for example), type.
+deactivate
+```
 If you get an error message when running ```python test/test_install.py``` that ends with "Import Error: No module named tensorflow" this means that your version of Keras is using Tensorflow instead of Theano as the backend. To change the backend follow the instructions in the "Troubleshooting - Import Error: no module named tensorflow" section of this document.
 
 #### 2. Using virtualenv
