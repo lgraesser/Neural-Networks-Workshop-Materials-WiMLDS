@@ -62,7 +62,6 @@ cd Neural-Networks-Workshop-Materials-WiMLDS
 # Then, create a virtual environment
 conda env create -f environment.yml
 # Note: the environment will be named NN_tutorial and will be set up with python 3.5
-# When conda asks you proceed ([y]/n)? type 'y'
 
 # Switch into your new environment
 activate NN_tutorial
