@@ -55,8 +55,9 @@ mkdir <directory_name>
 # eg. mkdir NN_tutorial
 cd <directory_name>
 
-# Clone the repo
+# Clone the repo and navigate to its main directory
 git clone https://github.com/lgraesser/Neural-Networks-Workshop-Materials-WiMLDS.git
+cd Neural-Networks-Workshop-Materials-WiMLDS
 
 # Then, create a virtual environment
 conda env create -f environment.yml
