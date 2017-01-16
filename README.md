@@ -179,7 +179,7 @@ python test/test_install.py
 
 ## How to use this repo
 
-There are three scripts which acommpany this tutorial. They can be run through either the ipython notebook or the command line
+There are three scripts which acommpany this tutorial. They can be run through either the jupyter notebook or the command line
 
 * Part1
     * KerasIntro_Example1
@@ -192,12 +192,12 @@ There are three scripts which acommpany this tutorial. They can be run through e
 git pull origin master
 
 #To load an ipython notebook, type
-ipython notebook
+jupyter notebook
 
 # If you get an error, you may need to install ipython first. Try 
 pip install ipython
 # Then
-ipython notebook
+jupyter notebook
 
 # Otherwise to run a .py script from command line 
 # navigate to the directory it is in and type python <filename>, for example
